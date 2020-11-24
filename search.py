@@ -4,17 +4,6 @@
 #４．３に追加してキャラクターリスト(source)をCSVから読み込んで登録できるようにしてみましょう
 #５．４に追加してキャラクターリストをCSVに書き込めるようにしてみましょう
 
-
-### キャラクターソース作成
-def create_source():
-    source=["ねずこ","たんじろう","きょうじゅろう","ぎゆう","げんや","かなお","ぜんいつ"]
-    
-    with open("character_source.csv", "wb") as list:
-        for e in source:
-            list.write((e + "\n").encode('utf-8'))
-
-
-
 ### 検索ツール
 def search():
 
@@ -36,5 +25,4 @@ def search():
 
 
 if __name__ == "__main__":
-    create_source()
     search()
